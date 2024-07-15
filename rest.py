@@ -3,7 +3,6 @@ import os
 
 url = "https://integrate.api.nvidia.com/v1/chat/completions"
 headers = {
-    "Content-Type": "application/json",
     "Authorization": "Bearer " + str(os.environ.get("NV_API_KEY")),
 }
 q = "Write a limerick about the wonders of GPU computing."
