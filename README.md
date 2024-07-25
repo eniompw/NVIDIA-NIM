@@ -2,6 +2,12 @@
 
 Example Code for using NVIDIA NIM APIs
 
+## Setup API Key Environment Variable
+```
+echo 'export NV_API_KEY=nvapi-...' >> ~/.bashrc
+source ~/.bashrc
+```
+
 **NVIDIA REFs**
 
 * [NVIDIA NIM APIs](https://build.nvidia.com/explore/discover)
