@@ -8,6 +8,9 @@ echo 'export NV_API_KEY=nvapi-...' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+**DEBUG:**  
+`print(response.__dict__)`
+
 **NVIDIA REFs**
 
 * [NVIDIA NIM APIs](https://build.nvidia.com/explore/discover)
