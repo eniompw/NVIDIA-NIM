@@ -1,26 +1,39 @@
 # NVIDIA-NIM
 
-Example Code for using NVIDIA NIM APIs
+Example code for using NVIDIA NIM APIs
 
-## Setup API Key Environment Variable
+## Setup
+
+1. Create a `.env` file in the project root:
+   ```
+   NV_API_KEY=your-api-key-here
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+This repository contains two example scripts:
+
+1. `rest.py`: A simple REST API implementation
+2. `openai.py`: An example using the OpenAI-compatible API
+
+Run either script to test the NVIDIA NIM API:
+
+```bash
+python rest.py
+# or
+python openai.py
 ```
-echo 'export NV_API_KEY=nvapi-...' >> ~/.bashrc
-source ~/.bashrc
-```
 
-**DEBUG:**  
-`print(response.__dict__)`
+## References
 
-**NVIDIA REFs**
+- [NVIDIA NIM APIs Documentation](https://build.nvidia.com/explore/discover)
+- [Available Models](https://build.nvidia.com/models)
 
-* [NVIDIA NIM APIs](https://build.nvidia.com/explore/discover)
-* [gemma-2-27b-it](https://build.nvidia.com/google/gemma-2-27b-it)
+## License
 
-**Code Examples**
-
-* [OpenAI API Example](https://github.com/eniompw/NVIDIA-NIM/blob/main/openai.py)
-* [Simplified REST API](https://github.com/eniompw/NVIDIA-NIM/blob/main/rest.py)
-
-**REST Based on:**
-
-* [Python Groq REST](https://github.com/eniompw/LLMVercelGroq/blob/main/rest.py)
+[MIT License](LICENSE)
