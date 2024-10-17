@@ -9,4 +9,7 @@ query = "How many R's are there in the word 'strawberry'?."
 data = {"messages": [{"role": "user", "content": query}], "model": "nvidia/llama-3.1-nemotron-70b-instruct"}
 
 response = requests.post(url, headers=headers, json=data)
-if response.status_code == 200: print(response.json()["choices"][0]["message"]["content"])
+if response.status_code == 200:
+    print(response.json()["choices"][0]["message"]["content"])
+else:
+    print(response.reason)
